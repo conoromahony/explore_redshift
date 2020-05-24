@@ -17,7 +17,7 @@ def add_output_to_pdf(output_schema_str, output_table_str, output_column_str):
     #   link=<URL>
     pdf.cell(200, 4, txt=output_schema_str, ln=1, align='L')
     pdf.cell(200, 4, txt=output_table_str, ln=1, align='L')
-    pdf.cell(200, 4, txt=output_column_str, ln=1, align='L')
+    pdf.multi_cell(200, 4, txt=output_column_str, align='L')
 
 
 # Function to convert the contents of a list into a string, separated by commas.
